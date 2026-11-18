@@ -1,0 +1,1 @@
+يمكن تشغيل التدريب في Google Colab بفتح notebook بعد إنشائه أو تشغيل train.py بعد رفع البيانات. راجع README.md.

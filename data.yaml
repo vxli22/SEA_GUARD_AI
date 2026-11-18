@@ -1,0 +1,14 @@
+# قالب فقط: عدّل المسارات والأسماء لتطابق مجموعة بياناتك وملصقاتها الفعلية.
+path: ./dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: trash
+  1: eel
+  2: rov
+  3: starfish
+  4: fish
+  5: crab
+  6: plant

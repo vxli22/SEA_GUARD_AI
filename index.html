@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SEA GUARD AI</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><span class="logo">🌊</span><div><h1>SEA GUARD AI</h1><p data-i18n="tagline">نظام ذكي لمراقبة البيئة البحرية</p></div></div>
+<button id="langBtn" class="lang">EN</button></header>
+<main>
+  <section class="hero"><p class="eyebrow">MARINE ENVIRONMENT MONITORING</p><h2 data-i18n="welcome">حماية البحار تبدأ بالذكاء الاصطناعي</h2>
+  <p data-i18n="intro">اكتشف النفايات البحرية وتابع مؤشرات جودة المياه من لوحة واحدة.</p></section>
+  <section class="grid">
+    <article class="panel"><h2 data-i18n="sensors">قراءات الحساسات</h2><div class="metrics">
+      <div class="metric"><span>pH</span><strong id="ph">—</strong></div>
+      <div class="metric"><span>TDS</span><strong id="tds">—</strong><small>ppm</small></div>
+      <div class="metric"><span data-i18n="turbidity">العكارة</span><strong id="turbidity">—</strong></div>
+      <div class="metric"><span data-i18n="temperature">درجة الحرارة</span><strong id="temperature">—</strong><small>°C</small></div>
+    </div><p id="sensorTime" class="muted">—</p></article>
+    <article class="panel"><h2 data-i18n="detect">تحليل صورة بحرية</h2><form id="detectForm">
+      <input id="imageInput" type="file" accept="image/*" required>
+      <button type="submit" data-i18n="analyze">تحليل الصورة</button></form>
+      <p id="detectMessage" class="muted"></p><img id="preview" alt="" hidden>
+      <ul id="results"></ul></article>
+  </section>
+  <section class="panel"><h2 data-i18n="classes">الفئات المستهدفة</h2><p>trash · eel · rov · starfish · fish · crab · plant</p>
+  <p class="muted" data-i18n="modelNote">يلزم وضع ملف best.pt بعد تدريب النموذج لتفعيل الكشف.</p></section>
+</main>
+<footer>SEA GUARD AI · <span data-i18n="footer">مشروع مراقبة البيئة البحرية</span></footer>
+<script src="app.js"></script>
+</body></html>
